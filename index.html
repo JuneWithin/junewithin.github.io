@@ -22,16 +22,14 @@
       min-height: 100vh;
       padding: 2rem;
 
-      /* ✨ Fade-in animation */
+      /* 🔮 Pure fade-in animation */
       opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1.8s ease-out forwards;
+      animation: fadeIn 1.8s ease-in forwards;
     }
 
-    @keyframes fadeInUp {
+    @keyframes fadeIn {
       to {
         opacity: 1;
-        transform: translateY(0);
       }
     }
 
