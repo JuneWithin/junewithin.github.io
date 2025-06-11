@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JuneWithin – Dian Junita</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
@@ -23,20 +23,37 @@
       padding: 2rem;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
     .container {
       max-width: 700px;
       text-align: center;
     }
 
-    .fade {
+    /* Fade-in animation keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Animation base with slower duration */
+    .fade-in {
       opacity: 0;
-      animation: fadeIn 1s ease forwards;
+      animation: fadeIn 2.5s ease forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.5s;
+    }
+
+    .delay-2 {
+      animation-delay: 2s;
+    }
+
+    .delay-3 {
+      animation-delay: 3.5s;
+    }
+
+    .delay-4 {
+      animation-delay: 5s;
     }
 
     .logo-img {
@@ -45,7 +62,6 @@
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       margin-bottom: 1.5rem;
-      animation-delay: 0.2s;
     }
 
     h1 {
@@ -54,7 +70,6 @@
       color: #0a21c6;
       font-weight: bold;
       margin-bottom: 1.5rem;
-      animation-delay: 1s;
     }
 
     p {
@@ -63,7 +78,6 @@
       line-height: 1.6;
       font-family: 'Inter', sans-serif;
       margin-bottom: 2rem;
-      animation-delay: 1.8s;
     }
 
     .button-group {
@@ -71,16 +85,6 @@
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
-      animation-delay: 2.4s;
-    }
-
-    /* Apply fade animation */
-    .logo-img,
-    h1,
-    p,
-    .button-group {
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
     }
 
     .btn {
@@ -119,13 +123,13 @@
 </head>
 <body>
   <div class="container">
-    <img src="paintingself.jpg" alt="Dian Logo" class="logo-img" />
-    <h1>Good day, Dian's here</h1>
-    <p>
+    <img src="paintingself.jpg" alt="Dian Logo" class="logo-img fade-in delay-1" />
+    <h1 class="fade-in delay-2">Good day, Dian's here</h1>
+    <p class="fade-in delay-3">
       Welcome to my corner of the internet! I'm a human and also a psychologist who believes in the power of mindful growth and meaningful connection.  
       This page is a little glimpse into who I am—both as a person and a professional. Feel free to explore, reach out, or just hang around. Glad to have you here!
     </p>
-    <div class="button-group">
+    <div class="button-group fade-in delay-4">
       <a href="human.html" class="btn btn-human">🌸 About 'Human' Dian</a>
       <a href="professional.html" class="btn btn-professional">🧠 About 'Professional' Dian</a>
     </div>
