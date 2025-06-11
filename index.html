@@ -14,7 +14,7 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #ebf5fb;
+      background-color: #daf6ff;
       color: #1f2937;
       display: flex;
       justify-content: center;
@@ -31,7 +31,7 @@
     h1 {
       font-size: 2.8rem;
       font-family: 'Century Gothic', 'Avant Garde', sans-serif;
-      color: #2471a3;
+      color: #0a21c6;
       font-weight: bold;
       margin-bottom: 1.5rem;
     }
@@ -41,19 +41,60 @@
       color: #374151;
       line-height: 1.6;
       font-family: 'Inter', sans-serif;
+      margin-bottom: 2rem;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-human {
+      background-color: #a78bfa;
+    }
+
+    .btn-human:hover {
+      background-color: #8b5cf6;
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-professional {
+      background-color: #38b2ac;
+    }
+
+    .btn-professional:hover {
+      background-color: #319795;
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>GOOD DAY, DIAN'S HERE</h1>
+    <h1>Good day, Dian's here</h1>
     <p>
       Welcome to my corner of the internet! I'm a human and also a psychologist who believes in the power of mindful growth and meaningful connection.  
       This page is a little glimpse into who I am—both as a person and a professional. Feel free to explore, reach out, or just hang around. Glad to have you here!
     </p>
-<div class="button-group">
-      <a href="human.html" class="btn">About 'Human' Dian</a>
-      <a href="professional.html" class="btn">About 'Professional' Dian</a>
+    <div class="button-group">
+      <a href="human.html" class="btn btn-human">🌸 About 'Human' Dian</a>
+      <a href="professional.html" class="btn btn-professional">🧠 About 'Professional' Dian</a>
     </div>
   </div>
 </body>
