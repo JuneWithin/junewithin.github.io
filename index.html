@@ -21,10 +21,6 @@
       align-items: center;
       min-height: 100vh;
       padding: 2rem;
-
-      /* 🔮 Pure fade-in animation */
-      opacity: 0;
-      animation: fadeIn 1.8s ease-in forwards;
     }
 
     @keyframes fadeIn {
@@ -38,12 +34,18 @@
       text-align: center;
     }
 
+    .fade {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
     .logo-img {
       width: 120px;
       height: auto;
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       margin-bottom: 1.5rem;
+      animation-delay: 0.2s;
     }
 
     h1 {
@@ -52,6 +54,7 @@
       color: #0a21c6;
       font-weight: bold;
       margin-bottom: 1.5rem;
+      animation-delay: 1s;
     }
 
     p {
@@ -60,6 +63,7 @@
       line-height: 1.6;
       font-family: 'Inter', sans-serif;
       margin-bottom: 2rem;
+      animation-delay: 1.8s;
     }
 
     .button-group {
@@ -67,6 +71,16 @@
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
+      animation-delay: 2.4s;
+    }
+
+    /* Apply fade animation */
+    .logo-img,
+    h1,
+    p,
+    .button-group {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
     }
 
     .btn {
