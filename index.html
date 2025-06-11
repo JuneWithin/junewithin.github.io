@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JuneWithin – Dian Junita</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>About Human Dian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -14,45 +14,76 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #daf6ff;
+      background-color: #f2edfd;
       color: #1f2937;
+      padding: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 2rem;
     }
 
     .container {
-      max-width: 700px;
+      max-width: 800px;
       text-align: center;
     }
 
-    .logo-img {
-      width: 120px;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #6b21a8;
+    }
+
+    .quote {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #6b7280;
       margin-bottom: 1.5rem;
     }
 
-    h1 {
-      font-size: 2.8rem;
-      font-family: 'Century Gothic', 'Avant Garde', sans-serif;
-      color: #0a21c6;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
+    .photo-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .photo-group img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #c084fc;
     }
 
     p {
-      font-size: 1.1rem;
-      color: #374151;
+      font-size: 1rem;
       line-height: 1.6;
-      font-family: 'Inter', sans-serif;
-      margin-bottom: 2rem;
+      margin: 1rem 0;
     }
 
-    .button-group {
+    .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #ede9fe;
+      color: #6b21a8;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .email-link:hover {
+      background-color: #ddd6fe;
+      transform: scale(1.03);
+    }
+
+    .buttons {
+      margin-top: 2.5rem;
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -60,50 +91,69 @@
     }
 
     .btn {
-      padding: 0.75rem 1.75rem;
-      font-size: 1rem;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: white;
       border: none;
       border-radius: 9999px;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .btn-human {
+    .btn-back {
       background-color: #a78bfa;
     }
 
-    .btn-human:hover {
+    .btn-back:hover {
       background-color: #8b5cf6;
       transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     }
 
-    .btn-professional {
+    .btn-favorite {
+      background-color: #9333ea;
+    }
+
+    .btn-favorite:hover {
+      background-color: #7e22ce;
+      transform: scale(1.05);
+    }
+
+    .btn-home {
       background-color: #38b2ac;
     }
 
-    .btn-professional:hover {
+    .btn-home:hover {
       background-color: #319795;
       transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="paintingself.jpg" alt="Dian Logo" class="logo-img" />
-    <h1>Good day, Dian's here</h1>
+    <h1>Meet Dian, the Human</h1>
+    <p class="quote">“I am not what happened to me, I am what I choose to become.” – Carl Jung</p>
+
+    <div class="photo-group">
+      <img src="humandianpic1.jpg" alt="Dian photo 1">
+      <img src="humandianpic2.jpg" alt="Dian photo 2">
+    </div>
+
     <p>
-      Welcome to my corner of the internet! I'm a human and also a psychologist who believes in the power of mindful growth and meaningful connection.  
-      This page is a little glimpse into who I am—both as a person and a professional. Feel free to explore, reach out, or just hang around. Glad to have you here!
+      Before anything else, I’m a human first—curious, always growing, and figuring things out as I go.  
+      Imagination keeps me dreaming, caution keeps me grounded, and somewhere between chaos and routine,  
+      I try to find my balance. I believe that understanding ourselves is a lifetime journey, and I’m on that path too.
     </p>
-    <div class="button-group">
-      <a href="human.html" class="btn btn-human">🌸 About 'Human' Dian</a>
-      <a href="professional.html" class="btn btn-professional">🧠 About 'Professional' Dian</a>
+
+    <a href="mailto:your.email@example.com" class="email-link">
+      📧 Click here to reach me through my personal email
+    </a>
+
+    <div class="buttons">
+      <a href="index.html" class="btn btn-home">🏠 Home</a>
+      <a href="index.html" class="btn btn-back">⬅ Back</a>
+      <a href="favorites.html" class="btn btn-favorite">⭐ Dian's Favorite Things</a>
     </div>
   </div>
 </body>
