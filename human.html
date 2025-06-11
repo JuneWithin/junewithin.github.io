@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +28,25 @@
       text-align: center;
     }
 
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.4s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 1s; }
+    .delay-3 { animation-delay: 1.8s; }
+    .delay-4 { animation-delay: 2.6s; }
+    .delay-5 { animation-delay: 3.4s; }
+
     h1 {
-     font-size: 2.5rem;
+      font-size: 2.5rem;
       color: #a78bfa;
       margin-bottom: 0.5rem;
       font-weight: 800;
@@ -134,25 +150,25 @@
 </head>
 <body>
   <div class="container">
-    <h1>🌸 Meet Dian, the Human 🌸</h1>
-    <p class="quote">“I am not what happened to me, I am what I choose to become.” – Carl Jung</p>
+    <h1 class="fade-in delay-1">🌸 Meet Dian, the Human 🌸</h1>
+    <p class="quote fade-in delay-2">“I am not what happened to me, I am what I choose to become.” – Carl Jung</p>
 
-    <div class="photo-group">
+    <div class="photo-group fade-in delay-3">
       <img src="humandianpic1.jpg" alt="Dian photo 1">
       <img src="humandianpic2.jpg" alt="Dian photo 2">
     </div>
 
-    <p>
+    <p class="fade-in delay-4">
       Before anything else, I’m a human first—curious, always growing, and figuring things out as I go.  
       Imagination keeps me dreaming, caution keeps me grounded, and somewhere between chaos and routine,  
       I try to find my balance. I believe that understanding ourselves is a lifetime journey, and I’m on that path too.
     </p>
 
-    <a href="mailto:your.email@example.com" class="email-link">
+    <a href="mailto:your.email@example.com" class="email-link fade-in delay-5">
       💌 <strong><em>Click here to reach me through my personal email</em></strong>
     </a>
 
-    <div class="buttons">
+    <div class="buttons fade-in delay-5">
       <a href="index.html" class="btn btn-home">🏠 Home</a>
       <a href="index.html" class="btn btn-back">⬅ Back</a>
       <a href="favorites.html" class="btn btn-favorite">⭐ Dian's Favorite Things</a>
