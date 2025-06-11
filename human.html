@@ -46,13 +46,19 @@
       margin-bottom: 1rem;
     }
 
+    .photo-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
     .profile-photo {
       width: 160px;
       height: 160px;
       object-fit: cover;
       border-radius: 50%;
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
@@ -118,15 +124,20 @@
 <body>
   <div class="container">
     <h1>🌸 Meet Dian, the Human</h1>
-    <div class="quote">“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Jung</div>
+    <div class="quote">“I am not what happened to me, I am what I choose to become.” — Carl Jung</div>
 
-    <!-- 📷 Photo of Dian -->
-    <img src="your-photo.jpg" alt="Photo of Dian" class="profile-photo" />
+    <!-- 📷 Two Photos of Dian -->
+    <div class="photo-gallery">
+      <img src="humandianpic1.jpg" alt="Dian Photo 1" class="profile-photo" />
+      <img src="humandianpic2.jpg" alt="Dian Photo 2" class="profile-photo" />
+    </div>
 
+    <!-- 📝 Intro Text -->
     <p>
       Before anything else, I’m a human first—curious, always growing, and figuring things out as I go. Imagination keeps me dreaming, caution keeps me grounded, and somewhere between chaos and routine, I try to find my balance. I believe that understanding ourselves is a lifetime journey, and I’m on that path too.
     </p>
 
+    <!-- 📧 Email -->
     <p class="email">
       Reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a>
     </p>
