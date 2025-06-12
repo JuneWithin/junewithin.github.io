@@ -21,8 +21,15 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      animation: fadeIn 1.8s ease forwards;
       opacity: 0;
-      animation: fadeIn 1s ease forwards;
     }
 
     @keyframes fadeIn {
@@ -31,9 +38,8 @@
       }
     }
 
-    .container {
-      max-width: 800px;
-      text-align: center;
+    .content {
+      flex: 1;
     }
 
     h1 {
@@ -44,7 +50,7 @@
     }
 
     .quote {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-style: italic;
       color: #6b7280;
       margin-bottom: 1.5rem;
@@ -56,10 +62,18 @@
       margin: 1rem 0;
     }
 
+    .profile-img {
+      flex: 0 0 30%;
+      max-width: 280px;
+      border-radius: 40px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      object-fit: cover;
+      height: auto;
+    }
+
     .buttons {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
       display: flex;
-      justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
     }
@@ -76,20 +90,20 @@
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .btn-back {
+    .btn-home {
       background-color: #a78bfa;
     }
 
-    .btn-back:hover {
+    .btn-home:hover {
       background-color: #8b5cf6;
       transform: scale(1.05);
     }
 
-    .btn-home {
+    .btn-back {
       background-color: #38b2ac;
     }
 
-    .btn-home:hover {
+    .btn-back:hover {
       background-color: #319795;
       transform: scale(1.05);
     }
@@ -97,21 +111,24 @@
 </head>
 <body>
   <div class="container">
-    <h1>🧠 Meet Dian, the Professional</h1>
-    <p class="quote">“Knowing yourself is the beginning of all wisdom.” – Aristotle</p>
+    <div class="content">
+      <h1>🧠 Meet Dian, the Professional</h1>
+      <p class="quote">“Your vision will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes.” – Carl Jung</p>
 
-    <p>
-      I’m a psychologist driven by curiosity, compassion, and evidence-based care. My practice is built on understanding each person as unique, helping them uncover insight, build resilience, and make empowered choices.
-    </p>
+      <p>
+        As a psychologist, I bring empathy, evidence-based approaches, and deep curiosity into my practice. I believe in collaborative growth and creating a safe, warm space for others to explore their minds and emotions. Whether in therapy rooms, classrooms, or collaborative projects—I carry my belief that healing and understanding go hand-in-hand.
+      </p>
 
-    <p>
-      With experience in both clinical and research settings, I’m passionate about integrating psychological theory with real-world applications. Whether it’s in a one-on-one session, a workshop, or a written piece, my goal remains the same: to help people grow meaningfully.
-    </p>
+      <p>
+        Professionally, I strive to integrate theory and humanity—meeting people where they are while also guiding toward where they want to be. With years of study, clinical exposure, and continued learning, I still believe the most powerful tool we have is connection.
+      </p>
 
-    <div class="buttons">
-      <a href="index.html" class="btn btn-home">🏠 Home</a>
-      <a href="index.html" class="btn btn-back">⬅ Back</a>
+      <div class="buttons">
+        <a href="index.html" class="btn btn-home">🏠 Home</a>
+        <a href="index.html" class="btn btn-back">⬅ Back</a>
+      </div>
     </div>
+    <img src="propicdian1.jpg" alt="Professional Dian" class="profile-img">
   </div>
 </body>
 </html>
