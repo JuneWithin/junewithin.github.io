@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Professional Dian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f2edfd;
+      color: #1f2937;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #38b2ac;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+
+    .quote {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
+    .buttons {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-back {
+      background-color: #a78bfa;
+    }
+
+    .btn-back:hover {
+      background-color: #8b5cf6;
+      transform: scale(1.05);
+    }
+
+    .btn-home {
+      background-color: #38b2ac;
+    }
+
+    .btn-home:hover {
+      background-color: #319795;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Meet Dian, the Professional</h1>
+    <p class="quote">“Knowing yourself is the beginning of all wisdom.” – Aristotle</p>
+
+    <p>
+      I’m a psychologist driven by curiosity, compassion, and evidence-based care. My practice is built on understanding each person as unique, helping them uncover insight, build resilience, and make empowered choices.
+    </p>
+
+    <p>
+      With experience in both clinical and research settings, I’m passionate about integrating psychological theory with real-world applications. Whether it’s in a one-on-one session, a workshop, or a written piece, my goal remains the same: to help people grow meaningfully.
+    </p>
+
+    <div class="buttons">
+      <a href="index.html" class="btn btn-home">🏠 Home</a>
+      <a href="index.html" class="btn btn-back">⬅ Back</a>
+    </div>
+  </div>
+</body>
+</html>
