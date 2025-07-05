@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Professional Dian</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -17,60 +17,29 @@
       background-color: #ffffff;
       color: #1f2937;
       padding: 2rem;
-      min-height: 100vh;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       width: 100%;
       display: flex;
+      justify-content: space-between;
       gap: 2rem;
-      align-items: flex-start;
-      flex-wrap: wrap;
     }
 
     .text-section {
       flex: 1;
-      min-width: 320px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #2db4aa;
-      margin-bottom: 1.5rem;
-      white-space: nowrap;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
     }
 
     .photo-section {
-      flex-shrink: 0;
-      text-align: center;
-    }
-
-    .license-button {
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      border: 2px solid #22c55e;
-      color: #15803d;
-      font-weight: 600;
-      padding: 0.7rem 1rem;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      width: 100%;
-      max-width: 320px;
-      box-sizing: border-box;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .photo-section img {
@@ -80,12 +49,46 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
+    .license-button {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding: 0.8rem 1rem;
+      border: 2px solid #22c55e;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      color: #15803d;
+      font-weight: 600;
+      width: 100%;
+      max-width: 320px;
+      transition: background-color 0.3s ease;
+    }
+
+    .license-button:hover {
+      background-color: #f0fdf4;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #14b8a6;
+      margin-bottom: 1.2rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
     .buttons {
-      margin-top: auto;
+      margin-top: 2rem;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
-      align-items: flex-end;
     }
 
     .btn {
@@ -110,11 +113,11 @@
     }
 
     .btn-home {
-      background-color: #2db4aa;
+      background-color: #2dd4bf;
     }
 
     .btn-home:hover {
-      background-color: #0d9488;
+      background-color: #14b8a6;
       transform: scale(1.05);
     }
 
@@ -123,38 +126,17 @@
     }
 
     .btn-experience:hover {
-      background-color: #15803d;
+      background-color: #16a34a;
       transform: scale(1.05);
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .text-section, .photo-section {
-        text-align: center;
-        align-items: center;
-      }
-
-      h1 {
-        white-space: normal;
-      }
-
-      .buttons {
-        justify-content: center;
-      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Text Section -->
     <div class="text-section">
       <h1>🧠 Meet Dian, the Professional</h1>
-
       <p>As a psychologist, I strive to walk alongside people in their journey toward healing, growth, and self-discovery. I’ve worked with individuals facing a range of mental health struggles, from everyday stress to more complex psychological conditions.</p>
-
       <p>My approach integrates clinical knowledge, compassionate care, and a deep respect for every person’s unique story and pace. Whether I’m providing one-on-one sessions, facilitating support groups, or designing interventions, I aim to create safe, empathetic spaces where people feel heard and empowered.</p>
 
       <div class="buttons">
@@ -164,8 +146,9 @@
       </div>
     </div>
 
+    <!-- Photo and License -->
     <div class="photo-section">
-      <a href="https://himpsi.or.id/cari-psikolog" target="_blank" class="license-button">
+      <a class="license-button" href="https://himpsi.or.id/cari-psikolog" target="_blank">
         🔍 Click here to check my license by searching my name (Dian Junita, DKI Jakarta)
       </a>
       <img src="propicdian5.jpg" alt="Professional Dian Photo">
