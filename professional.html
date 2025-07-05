@@ -14,7 +14,7 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f2edfd;
+      background-color: #ffffff;
       color: #1f2937;
       padding: 2rem;
       display: flex;
@@ -27,6 +27,7 @@
       max-width: 1000px;
       width: 100%;
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
       gap: 2rem;
@@ -54,6 +55,7 @@
       color: #38b2ac;
       margin-bottom: 1rem;
       font-weight: 800;
+      white-space: nowrap;
     }
 
     p {
@@ -99,6 +101,15 @@
       transform: scale(1.05);
     }
 
+    .btn-back {
+      background-color: #94a3b8;
+    }
+
+    .btn-back:hover {
+      background-color: #64748b;
+      transform: scale(1.05);
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -106,6 +117,9 @@
       }
       .photo-section {
         text-align: center;
+      }
+      h1 {
+        white-space: normal;
       }
     }
   </style>
@@ -120,6 +134,7 @@
       <div class="buttons">
         <a href="index.html" class="btn btn-home">🏠 Home</a>
         <a href="professionalexperience.html" class="btn btn-experience">📂 Professional Experience</a>
+        <a href="index.html" class="btn btn-back">⬅ Back</a>
       </div>
     </div>
 
