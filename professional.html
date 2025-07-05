@@ -27,35 +27,24 @@
       max-width: 1000px;
       width: 100%;
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
-      animation: fadeIn 1.5s ease forwards;
-      opacity: 0;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      gap: 2rem;
+      flex-wrap: nowrap;
     }
 
     .text-section {
       flex: 1;
-      padding-right: 2rem;
-      min-width: 300px;
     }
 
     .photo-section {
       flex: 1;
-      min-width: 250px;
-      text-align: center;
+      text-align: right;
     }
 
     .photo-section img {
       width: 100%;
-      max-width: 320px;
+      max-width: 300px;
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
@@ -109,6 +98,16 @@
       background-color: #16a34a;
       transform: scale(1.05);
     }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .photo-section {
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -125,7 +124,7 @@
     </div>
 
     <div class="photo-section">
-      <img src="propicdian1.jpg" alt="Professional Dian Photo">
+      <img src="propicdian5.jpg" alt="Professional Dian Photo">
     </div>
   </div>
 </body>
