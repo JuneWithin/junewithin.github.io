@@ -27,7 +27,7 @@
       max-width: 1100px;
       display: flex;
       gap: 2rem;
-      align-items: stretch;
+      align-items: flex-start;
       animation: fadeIn 1.8s ease forwards;
       opacity: 0;
       flex-wrap: wrap;
@@ -43,9 +43,6 @@
     .content {
       flex: 1;
       max-width: 600px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     h1 {
@@ -72,7 +69,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
     }
 
     .profile-img {
@@ -95,12 +91,12 @@
       width: 100%;
       max-width: 260px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
+      margin: 0 auto 1rem auto;
       line-height: 1.4;
     }
 
     .buttons {
-      margin-top: auto;
+      margin-top: 2rem;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
@@ -144,31 +140,22 @@
       background-color: #22c55e;
       transform: scale(1.05);
     }
-
-    /* Ensure content and photo align at the bottom */
-    .content,
-    .photo-section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="content">
-      <div>
-        <h1>🧠 Meet Dian, the Professional</h1>
-        <p class="quote">“Your vision will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes.” – Carl Jung</p>
+      <h1>🧠 Meet Dian, the Professional</h1>
+      <p class="quote">“Your vision will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes.” – Carl Jung</p>
 
-        <p>
-          As a psychologist, I bring empathy, evidence-based approaches, and deep curiosity into my practice. I believe in collaborative growth and creating a safe, warm space for others to explore their minds and emotions. Whether in therapy rooms, classrooms, or collaborative projects—I carry my belief that healing and understanding go hand-in-hand.
-        </p>
+      <p>
+        As a psychologist, I bring empathy, evidence-based approaches, and deep curiosity into my practice. I believe in collaborative growth and creating a safe, warm space for others to explore their minds and emotions. Whether in therapy rooms, classrooms, or collaborative projects—I carry my belief that healing and understanding go hand-in-hand.
+      </p>
 
-        <p>
-          Professionally, I strive to integrate theory and humanity—meeting people where they are while also guiding toward where they want to be. With years of study, clinical exposure, and continued learning, I still believe the most powerful tool we have is connection.
-        </p>
-      </div>
+      <p>
+        Professionally, I strive to integrate theory and humanity—meeting people where they are while also guiding toward where they want to be. With years of study, clinical exposure, and continued learning, I still believe the most powerful tool we have is connection.
+      </p>
+
       <div class="buttons">
         <a href="index.html" class="btn btn-back">⬅ Back</a>
         <a href="index.html" class="btn btn-home">🏠 Home</a>
