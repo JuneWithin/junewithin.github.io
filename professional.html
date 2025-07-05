@@ -65,12 +65,36 @@
       margin: 1rem 0;
     }
 
+    .photo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
     .profile-img {
-      width: 280px;
+      width: 200px;
       height: auto;
       border-radius: 40px;
       object-fit: cover;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .credential-btn {
+      border: 1px solid #6b7280;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.75rem;
+      border-radius: 8px;
+      background-color: transparent;
+      color: #1f2937;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      max-width: 200px;
+    }
+
+    .credential-btn:hover {
+      background-color: #e5e7eb;
     }
 
     .buttons {
@@ -140,7 +164,13 @@
         <a href="professionalexperience.html" class="btn btn-experience">📂 Professional Experience</a>
       </div>
     </div>
-    <img src="propicdian5.jpg" alt="Professional Dian" class="profile-img">
+
+    <div class="photo-section">
+      <a href="https://himpsi.or.id/cari-psikolog" class="credential-btn" target="_blank">
+        Click here to check my license by searching my name (Dian Junita, DKI Jakarta)
+      </a>
+      <img src="propicdian5.jpg" alt="Professional Dian" class="profile-img">
+    </div>
   </div>
 </body>
 </html>
