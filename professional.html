@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Professional Dian</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -19,43 +19,73 @@
       padding: 2rem;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       width: 100%;
       display: flex;
-      flex-direction: row;
-      align-items: flex-start;
       justify-content: space-between;
-      flex-wrap: wrap;
       gap: 2rem;
     }
 
     .text-section {
       flex: 1;
-      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     h1 {
       font-size: 2.5rem;
-      color: #38b2ac;
-      margin-bottom: 1.5rem;
+      color: #2cb1ac;
+      margin-bottom: 1rem;
       font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
-    h1 span.emoji {
-      font-size: 2.2rem;
-      vertical-align: middle;
-      margin-right: 0.5rem;
+    h1 span {
+      display: block;
     }
 
-    p {
+    .text-section p {
       font-size: 1rem;
       line-height: 1.6;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .photo-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 300px;
+    }
+
+    .license-button {
+      border: 2px solid #22c55e;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: #15803d;
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 320px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-section img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .buttons {
@@ -77,21 +107,21 @@
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .btn-home {
-      background-color: #38b2ac;
-    }
-
-    .btn-home:hover {
-      background-color: #319795;
-      transform: scale(1.05);
-    }
-
     .btn-back {
       background-color: #a78bfa;
     }
 
     .btn-back:hover {
       background-color: #8b5cf6;
+      transform: scale(1.05);
+    }
+
+    .btn-home {
+      background-color: #0d9488;
+    }
+
+    .btn-home:hover {
+      background-color: #0f766e;
       transform: scale(1.05);
     }
 
@@ -104,54 +134,40 @@
       transform: scale(1.05);
     }
 
-    .photo-section {
-      flex: 1;
-      min-width: 250px;
-      text-align: center;
-    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .credential-button {
-      display: inline-block;
-      border: 2px solid #22c55e;
-      color: #15803d;
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      margin-bottom: 1.2rem;
-      text-decoration: none;
-      transition: background-color 0.2s ease;
-    }
+      .photo-section {
+        align-items: center;
+      }
 
-    .credential-button:hover {
-      background-color: #f0fdf4;
-    }
-
-    .photo-section img {
-      width: 100%;
-      max-width: 260px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      .buttons {
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="text-section">
-      <h1><span class="emoji">🧠</span>Meet Dian, the Professional</h1>
+      <h1>🧠 <span>Meet Dian, the Professional</span></h1>
       <p>As a psychologist, I strive to walk alongside people in their journey toward healing, growth, and self-discovery. I’ve worked with individuals facing a range of mental health struggles, from everyday stress to more complex psychological conditions.</p>
       <p>My approach integrates clinical knowledge, compassionate care, and a deep respect for every person’s unique story and pace. Whether I’m providing one-on-one sessions, facilitating support groups, or designing interventions, I aim to create safe, empathetic spaces where people feel heard and empowered.</p>
+    </div>
 
+    <div class="photo-section">
+      <a href="https://himpsi.or.id/cari-psikolog" class="license-button" target="_blank">
+        🔍 Click here to check my license by searching my name (Dian Junita, DKI Jakarta)
+      </a>
+      <img src="propicdian5.jpg" alt="Professional Dian Photo" />
       <div class="buttons">
         <a href="index.html" class="btn btn-back">⬅ Back</a>
         <a href="index.html" class="btn btn-home">🏠 Home</a>
         <a href="professionalexperience.html" class="btn btn-experience">📂 Professional Experience</a>
       </div>
-    </div>
-
-    <div class="photo-section">
-      <a href="https://himpsi.or.id/cari-psikolog" target="_blank" class="credential-button">🔍 For License, you can check it here by searching my name (Dian Junita, DKI Jakarta)</a>
-      <img src="propicdian5.jpg" alt="Professional Dian Photo" />
     </div>
   </div>
 </body>
