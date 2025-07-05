@@ -1,5 +1,168 @@
 <!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Professional Dian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1f2937;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .text-section {
+      flex: 1 1 400px;
+    }
+
+    .photo-section {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .photo-section img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-top: 1rem;
+    }
+
+    .credential-btn {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      background-color: #22c55e;
+      color: white;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .credential-btn:hover {
+      background-color: #16a34a;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #38b2ac;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-back {
+      background-color: #a78bfa;
+    }
+
+    .btn-back:hover {
+      background-color: #8b5cf6;
+      transform: scale(1.05);
+    }
+
+    .btn-home {
+      background-color: #38b2ac;
+    }
+
+    .btn-home:hover {
+      background-color: #319795;
+      transform: scale(1.05);
+    }
+
+    .btn-experience {
+      background-color: #22c55e;
+    }
+
+    .btn-experience:hover {
+      background-color: #16a34a;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-section">
+      <h1>🧠 Meet Dian, the Professional</h1>
+      <p>As a psychologist, I strive to walk alongside people in their journey toward healing, growth, and self-discovery. I’ve worked with individuals facing a range of mental health struggles, from everyday stress to more complex psychological conditions.</p>
+      <p>My approach integrates clinical knowledge, compassionate care, and a deep respect for every person’s unique story and pace. Whether I’m providing one-on-one sessions, facilitating support groups, or designing interventions, I aim to create safe, empathetic spaces where people feel heard and empowered.</p>
+
+      <div class="buttons">
+        <a href="index.html" class="btn btn-back">⬅ Back</a>
+        <a href="index.html" class="btn btn-home">🏠 Home</a>
+        <a href="professionalexperience.html" class="btn btn-experience">📂 Professional Experience</a>
+      </div>
+    </div>
+
+    <div class="photo-section">
+      <a class="credential-btn" href="https://himpsi.or.id/cari-psikolog" target="_blank">
+        🔍 Search for my name: Dian Junita, DKI Jakarta
+      </a>
+      <img src="propicdian5.jpg" alt="Professional Dian Photo">
+    </div>
+  </div>
+</body>
+</html>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
