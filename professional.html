@@ -3,6 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Professional Dian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f2edfd;
+      color: #1f2937;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .text-section {
+      flex: 1;
+      padding-right: 2rem;
+      min-width: 300px;
+    }
+
+    .photo-section {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .photo-section img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #38b2ac;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-home {
+      background-color: #a78bfa;
+    }
+
+    .btn-home:hover {
+      background-color: #8b5cf6;
+      transform: scale(1.05);
+    }
+
+    .btn-experience {
+      background-color: #22c55e;
+    }
+
+    .btn-experience:hover {
+      background-color: #16a34a;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-section">
+      <h1>🧠 Meet Dian, the Professional</h1>
+      <p>As a psychologist, I strive to walk alongside people in their journey toward healing, growth, and self-discovery. I’ve worked with individuals facing a range of mental health struggles, from everyday stress to more complex psychological conditions.</p>
+      <p>My approach integrates clinical knowledge, compassionate care, and a deep respect for every person’s unique story and pace. Whether I’m providing one-on-one sessions, facilitating support groups, or designing interventions, I aim to create safe, empathetic spaces where people feel heard and empowered.</p>
+
+      <div class="buttons">
+        <a href="index.html" class="btn btn-home">🏠 Home</a>
+        <a href="professionalexperience.html" class="btn btn-experience">📂 Professional Experience</a>
+      </div>
+    </div>
+
+    <div class="photo-section">
+      <img src="propicdian1.jpg" alt="Professional Dian Photo">
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Professional Experience</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
