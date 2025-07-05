@@ -27,12 +27,16 @@
       max-width: 1200px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
       gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
     }
 
     .text-section {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .photo-section {
@@ -44,24 +48,24 @@
 
     .photo-section img {
       width: 100%;
-      max-width: 250px; /* made it moderate */
+      max-width: 250px;
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .license-button {
-      display: inline-block;
-      margin-bottom: 1.5rem;
-      padding: 0.5rem 1rem;
+      display: block;
+      margin-bottom: 1rem;
+      padding: 0.4rem 0.8rem;
       border: 2px solid #22c55e;
       border-radius: 12px;
       text-align: center;
       text-decoration: none;
       color: #15803d;
-      font-size: 0.85rem; /* smaller font */
+      font-size: 0.8rem;
       font-weight: 500;
       width: 100%;
-      max-width: 250px; /* match image */
+      max-width: 250px;
       transition: background-color 0.3s ease;
     }
 
@@ -86,7 +90,7 @@
     }
 
     .buttons {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
@@ -130,15 +134,33 @@
       background-color: #16a34a;
       transform: scale(1.05);
     }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-section, .photo-section {
+        width: 100%;
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <!-- Text Section -->
     <div class="text-section">
-      <h1>🧠 Meet Dian, the Professional</h1>
-      <p>As a psychologist, I strive to walk alongside people in their journey toward healing, growth, and self-discovery. I’ve worked with individuals facing a range of mental health struggles, from everyday stress to more complex psychological conditions.</p>
-      <p>My approach integrates clinical knowledge, compassionate care, and a deep respect for every person’s unique story and pace. Whether I’m providing one-on-one sessions, facilitating support groups, or designing interventions, I aim to create safe, empathetic spaces where people feel heard and empowered.</p>
+      <div>
+        <h1>🧠 Meet Dian, the Professional</h1>
+        <p>As a psychologist, I strive to walk alongside people in their journey toward healing, growth, and self-discovery. I’ve worked with individuals facing a range of mental health struggles, from everyday stress to more complex psychological conditions.</p>
+        <p>My approach integrates clinical knowledge, compassionate care, and a deep respect for every person’s unique story and pace. Whether I’m providing one-on-one sessions, facilitating support groups, or designing interventions, I aim to create safe, empathetic spaces where people feel heard and empowered.</p>
+      </div>
 
       <div class="buttons">
         <a href="index.html" class="btn btn-back">⬅ Back</a>
